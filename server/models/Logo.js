@@ -2,7 +2,7 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Logo = new keystone.List('Logo');
+const Logo = new keystone.List('Logo', {nocreate: true});
 
 Logo.add({
   image: {
