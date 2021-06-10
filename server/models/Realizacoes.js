@@ -2,7 +2,8 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Realizacoes = new keystone.List('Realizacoes');
+const Realizacoes = new keystone.List('Realizacoes', {singular: 'Realizacao',
+plural: 'Realizacoes'} );
 
 Realizacoes.add({
   name: {
@@ -21,6 +22,7 @@ Realizacoes.add({
     type: Types.CloudinaryImages,
     require: true,
   },
+  
   
 });
 
