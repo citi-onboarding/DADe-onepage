@@ -2,7 +2,10 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Banner = new keystone.List('Banner');
+const Banner = new keystone.List('Banner', {
+  nocreate: true,
+  nodelete: true,
+});
 
 Banner.add({
   purple_text: {
