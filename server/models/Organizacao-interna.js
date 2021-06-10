@@ -2,7 +2,7 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const organizacaointerna = new keystone.List('organizacao-interna');
+const organizacaointerna = new keystone.List('organizacao-interna', {nocreate: true, nodelete: true});
 
 organizacaointerna.add({
   text: {
