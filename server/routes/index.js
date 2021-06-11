@@ -1,8 +1,6 @@
 const path = require('path');
 const cors = require('cors');
 
-const postController = require('../controllers/postController');
-
 const contatoController = require('../controllers/contatoController');
 
 const notionController = require('../controllers/notionController')
