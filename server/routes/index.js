@@ -8,10 +8,15 @@ const bannerController = require('../controllers/bannerController')
 
 const logoController = require('../controllers/logoController');
 
+
+const organizacaointernaController = require('../controllers/organizacaointernaController');
+
 module.exports = (app) => {
   app.use(cors());
 
   app.get('/api/posts', postController.getPostController);
+
+  app.get('/api/organizacao-interna', organizacaointernaController.getOrganizacaoInternaController);
 
   app.get('/api/members', memberController.getMemberController);
 
@@ -22,6 +27,7 @@ module.exports = (app) => {
   app.get('/api/banner', bannerController.getBannerController);
   
   app.get('/api/logo', logoController.getLogoController);
+
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
