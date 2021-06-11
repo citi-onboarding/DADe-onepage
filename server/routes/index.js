@@ -6,6 +6,8 @@ const memberController = require('../controllers/memberController')
 const faqController = require('../controllers/faqController')
 const bannerController = require('../controllers/bannerController')
 
+const logoController = require('../controllers/logoController');
+
 module.exports = (app) => {
   app.use(cors());
 
@@ -18,6 +20,8 @@ module.exports = (app) => {
   app.get('/api/FAQ', faqController.getFAQController);
 
   app.get('/api/banner', bannerController.getBannerController);
+  
+  app.get('/api/logo', logoController.getLogoController);
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
