@@ -2,31 +2,31 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Member = new keystone.List('Members');
+const Membro = new keystone.List('Membros');
 
-Member.add({
-  name: {
+Membro.add({
+  nome: {
     type: Types.Text,
     required: true,
     initial: true,
     index: true,
   },
-  role:{
+  cargo:{
     type: Types.Text,
     required: true,
     initial: true,
     index: true,
   },
-  date:{
+  data_inicial:{
     type: Types.Text,
     required: true,
     initial: true,
     index: true,
   },
-  image: {
+  imagem: {
     type: Types.CloudinaryImages,
     require: true,
   },
 });
 
-Member.register();
+Membro.register();

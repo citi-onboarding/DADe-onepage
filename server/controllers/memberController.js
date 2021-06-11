@@ -1,6 +1,6 @@
 const keystone = require('keystone');
 
-const Member = keystone.list('Members');
+const Member = keystone.list('Membros');
 
 module.exports = {
   getMemberController(req, res) {

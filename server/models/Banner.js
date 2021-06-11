@@ -8,19 +8,19 @@ const Banner = new keystone.List('Banner', {
 });
 
 Banner.add({
-  purple_text: {
+  texto_roxo: {
     type: Types.Text,
     required: true,
     initial: true,
     index: true,
   },
-  yellow_text: {
+  texto_amarelo: {
     type: Types.Text,
     required: true,
     initial: true,
     index: true,
   },
-  image: {
+  imagem: {
     type: Types.CloudinaryImages,
     require: true,
   },
