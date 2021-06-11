@@ -11,10 +11,16 @@ const logoController = require('../controllers/logoController');
 
 const organizacaointernaController = require('../controllers/organizacaointernaController');
 
+
+
+const realizacoesController = require('../controllers/realizacoesController');
+
 module.exports = (app) => {
   app.use(cors());
 
   app.get('/api/posts', postController.getPostController);
+
+  app.get('/api/realizacoes', realizacoesController.getRealizacoesController);
 
   app.get('/api/organizacao-interna', organizacaointernaController.getOrganizacaoInternaController);
 
