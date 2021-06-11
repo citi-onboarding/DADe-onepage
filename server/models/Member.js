@@ -5,7 +5,7 @@ const { Types } = keystone.Field;
 const Membro = new keystone.List('Membros');
 
 Membro.add({
-  nome: {
+  name: {
     type: Types.Text,
     required: true,
     initial: true,
@@ -23,7 +23,7 @@ Membro.add({
     initial: true,
     index: true,
   },
-  imagem: {
+  image: {
     type: Types.CloudinaryImages,
     require: true,
   },

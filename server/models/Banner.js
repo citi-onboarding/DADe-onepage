@@ -20,7 +20,7 @@ Banner.add({
     initial: true,
     index: true,
   },
-  imagem: {
+  image: {
     type: Types.CloudinaryImages,
     require: true,
   },
