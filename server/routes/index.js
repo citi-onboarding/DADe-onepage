@@ -1,24 +1,31 @@
 const path = require('path');
 const cors = require('cors');
+
 const postController = require('../controllers/postController');
+
+const contatoController = require('../controllers/contatoController');
+
 const notionController = require('../controllers/notionController')
+
 const memberController = require('../controllers/memberController')
+
 const faqController = require('../controllers/faqController')
+
 const bannerController = require('../controllers/bannerController')
 
 const logoController = require('../controllers/logoController');
 
-
 const organizacaointernaController = require('../controllers/organizacaointernaController');
 
-
-
 const realizacoesController = require('../controllers/realizacoesController');
+
 
 module.exports = (app) => {
   app.use(cors());
 
   app.get('/api/posts', postController.getPostController);
+
+  app.get('/api/contatos', contatoController.getContatoController);
 
   app.get('/api/realizacoes', realizacoesController.getRealizacoesController);
 
@@ -33,7 +40,6 @@ module.exports = (app) => {
   app.get('/api/banner', bannerController.getBannerController);
   
   app.get('/api/logo', logoController.getLogoController);
-
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
