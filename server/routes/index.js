@@ -23,8 +23,6 @@ const realizacoesController = require('../controllers/realizacoesController');
 module.exports = (app) => {
   app.use(cors());
 
-  app.get('/api/posts', postController.getPostController);
-
   app.get('/api/contatos', contatoController.getContatoController);
 
   app.get('/api/realizacoes', realizacoesController.getRealizacoesController);
