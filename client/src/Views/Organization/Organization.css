@@ -1,0 +1,9 @@
+/* @font-face {
+	font-family: Austral-Sans;
+	src: url(../../);
+} */
+
+.organization{
+    display: flex;
+    /* font-family: Austral-Sans; */
+}

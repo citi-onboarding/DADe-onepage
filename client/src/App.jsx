@@ -1,10 +1,19 @@
 import {
   PostList,
+  Card,
 } from './components';
+
+import {
+  Organization,
+} from './Views';
 
 function App() {
   return (
-    <PostList />
+    <>
+      <Organization />
+      <PostList />
+    </>
+
   );
 }
 
