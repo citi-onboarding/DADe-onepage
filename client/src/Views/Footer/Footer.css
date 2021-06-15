@@ -23,3 +23,12 @@ footer p{
 footer img{
     padding-right: 7.1vw;
 }
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100vw;
+    margin: auto;
+}

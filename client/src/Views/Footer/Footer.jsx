@@ -5,8 +5,10 @@ function Footer() {
 
     return (
       <footer>
-        <p>Copyright © 2021 DADe UFPE</p>
-        <img src={by_citi} alt="Made with </> and s2 by CITi" />
+        <div className="footer-content">
+          <p>Copyright © 2021 DADe UFPE</p>
+          <img src={by_citi} alt="Made with </> and s2 by CITi" />
+        </div>
       </footer>
     );
   }
