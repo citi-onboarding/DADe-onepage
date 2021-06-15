@@ -7,7 +7,7 @@ function BannerTitleAndButton() {
   return (
     <div className="banner-title-and-button">
         <BannerTitle purple='Faça parte do diretório acadêmico' yellow='de Design da UFPE'/>
-        <Button text='PARTICIPAR' className="participate-button"/>
+        <Button text='PARTICIPAR' className="participate-button" link="https://google.com"/>
     </div>
   );
 }

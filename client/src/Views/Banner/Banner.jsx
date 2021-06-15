@@ -4,12 +4,14 @@ import{
   LogoDADe
 } from '../../components'
 
+import logo from '../../components/LogoDADe/Logo_DADe.svg'
+
 function Banner() {
 
     return (
       <div className='banner'>
         <BannerTitleAndButton/>
-        <LogoDADe/>
+        <LogoDADe logo={logo}/>
       </div>
     );
   }
