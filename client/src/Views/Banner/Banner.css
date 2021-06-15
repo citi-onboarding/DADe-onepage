@@ -1,0 +1,10 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.banner img{
+    width: 33vw;
+}

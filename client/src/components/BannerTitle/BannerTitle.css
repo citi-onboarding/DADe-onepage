@@ -1,0 +1,27 @@
+.purple-text{
+    color: #893E8F;
+   
+}
+
+.yellow-text{
+    color:#FFA500;
+    
+}
+
+.yellow-text, .purple-text{
+    width: 51vw;
+    white-space: nowrap;
+    font-family: Austral-Sans;
+    font-size: 4vw;
+    line-height: 8vh;
+}
+
+.banner-title{
+    padding-bottom: 3vh;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 5vh;
+
+}

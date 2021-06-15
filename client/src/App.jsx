@@ -1,17 +1,21 @@
 import {
-  PostList,
-  Card,
+  
 } from './components';
 
 import {
-  Organization,
+  Banner,
+  Navbar,
 } from './Views';
+
+import './App.css'
+
+import {useEffect, useState} from 'react'
 
 function App() {
   return (
     <>
-      <Organization />
-      <PostList />
+      <Navbar/>
+      <Banner/>
     </>
 
   );

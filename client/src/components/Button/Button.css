@@ -1,0 +1,17 @@
+.participate-button{
+    width: 11.8vw;
+    height: 54px;
+    background-color: #893E8F;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.participate-button h3{
+    font-family: Austral-Sans;
+    font-size: 22px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
