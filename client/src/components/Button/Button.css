@@ -1,6 +1,6 @@
 .participate-button{
     width: 11.8vw;
-    height: 54px;
+    height: 50px;
     background-color: #893E8F;
     border-radius: 8px;
     display: flex;
@@ -10,8 +10,9 @@
 
 .participate-button p{
     font-family: Austral-Sans;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
+    font-weight: 300;
 }

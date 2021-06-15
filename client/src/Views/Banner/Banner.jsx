@@ -11,7 +11,9 @@ function Banner() {
     return (
       <div className='banner'>
         <BannerTitleAndButton/>
-        <LogoDADe logo={logo}/>
+        <div className='logo'>
+          <LogoDADe logo={logo}/>
+        </div>
       </div>
     );
   }

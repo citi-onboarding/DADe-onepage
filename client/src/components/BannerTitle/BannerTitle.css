@@ -12,8 +12,8 @@
     width: 51vw;
     white-space: nowrap;
     font-family: Austral-Sans;
-    font-size: 4vw;
-    line-height: 8vh;
+    font-size: 3vw;
+    font-weight: 400;
 }
 
 .banner-title{
@@ -22,6 +22,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    row-gap: 5vh;
+    row-gap: 2vh;
 
 }
