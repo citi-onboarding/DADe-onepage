@@ -1,0 +1,8 @@
+.card-father-div{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 122px;
+    gap: 32px;
+}

@@ -4,6 +4,6 @@
 } */
 
 .organization{
-    display: flex;
-    /* font-family: Austral-Sans; */
+    height: 138px;
+    width: 100vw;
 }

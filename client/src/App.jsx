@@ -1,17 +1,14 @@
 import {
-  PostList,
-  Card,
-} from './components';
-
-import {
   Organization,
 } from './Views';
+
+import './App.css';
 
 function App() {
   return (
     <>
       <Organization />
-      <PostList />
+      
     </>
 
   );
