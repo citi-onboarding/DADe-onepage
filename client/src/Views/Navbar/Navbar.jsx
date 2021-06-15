@@ -11,6 +11,7 @@ function Navbar() {
 
     return (
       <header>
+        <nav>
           <div className="logo-nav">
             <LogoDADe width='98px' logo={logo}/>
           </div>
@@ -21,6 +22,7 @@ function Navbar() {
           <SectionNavbar text='Contato' id=''/>
           <SectionNavbar text='FAQ' id=''/>
           <Button text='PARTICIPAR' className="participate-button" width='11.8vw' link=''/>
+        </nav>
       </header>
     );
   }
