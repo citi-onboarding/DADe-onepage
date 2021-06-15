@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: Austral-Sans;
+	src: url(./Fonts/Austral-Sans_Rough-Regular.ttf);
+}
