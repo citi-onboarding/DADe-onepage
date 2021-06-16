@@ -1,17 +1,20 @@
 import {
-  
-} from './components';
-
-import {
+  Organization,
   Footer,
 } from './Views';
 
-import './App.css'
+import './App.css';
+
 
 function App() {
   return (
     <>
+
+      <Organization />
+     
+    
       <Footer/>
+
     </>
 
   );

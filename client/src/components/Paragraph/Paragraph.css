@@ -1,0 +1,11 @@
+.paragraph-div{
+display: flex;
+box-sizing: border-box;
+flex-direction: column;
+justify-content: center;
+width: 100vw;
+padding-left: 122px;
+padding-right: 77px;
+padding-top: 32px;
+gap: 7px;
+}
