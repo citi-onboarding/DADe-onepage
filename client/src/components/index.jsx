@@ -9,3 +9,5 @@ export { default as Card } from './Card';
 export { default as FooterNotion } from './Footer-Notion';
 export { default as CardFather} from './Card-Father';
 export { default as Paragraph} from './Paragraph';
+
+export { default as Member} from './Member';

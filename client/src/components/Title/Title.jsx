@@ -7,7 +7,7 @@ function Title(props) {
 
   return (
     <div className="title-div">
-      <h1>{props.titleText}</h1>
+      <h1 style={{color:props.textColor}}>{props.titleText}</h1>
     </div>
   );
 }
