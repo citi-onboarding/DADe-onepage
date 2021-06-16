@@ -1,21 +1,22 @@
 import {
-  
-} from './components';
-
-import {
-  Banner,
   Navbar,
+  Banner,
+  Organization,
+  Footer,
 } from './Views';
 
-import './App.css'
+import './App.css';
 
-import {useEffect, useState} from 'react'
 
 function App() {
   return (
     <>
       <Navbar/>
       <Banner/>
+
+      <Organization />
+     
+      <Footer/>
     </>
 
   );

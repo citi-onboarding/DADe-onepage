@@ -1,0 +1,17 @@
+.footer-div{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 138px;
+    width: 100vw;
+    background: #1D1D1B;
+    gap: 40px;
+}
+
+.footer-div h1{
+    font-family: Austral-Sans;
+    font-size: 28px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
