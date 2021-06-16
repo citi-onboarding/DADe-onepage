@@ -1,0 +1,19 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1440px;
+    
+}
+
+.banner img{
+    width: 33.8vw;
+    height: auto;
+    max-width: 487px;
+    max-height: 433px;
+}
+
+.logo{
+    margin-top: 4vh;
+}
