@@ -5,7 +5,7 @@ import{
   Button,
 } from '../../components'
 
-import logo from '../../components/LogoDADe/Logo_DADe.svg'
+import logo from '../../Assets/Logo_DADe.svg'
 
 function Navbar() {
 

@@ -2,6 +2,7 @@ import {
   Navbar,
   Banner,
   Organization,
+  OurMembers,
   Footer,
   Contact,
 } from './Views';
@@ -15,8 +16,8 @@ function App() {
      
       <Navbar/>
       <Banner/>
-
       <Organization />
+      <OurMembers/>
       <Contact/>
       <Footer/>
       
