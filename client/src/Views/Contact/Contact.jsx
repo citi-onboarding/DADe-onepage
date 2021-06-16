@@ -27,7 +27,7 @@ import {
           <div className='contact-info'>
             <div className='contact-paragraph'>
               <div className='title-div'>
-              <Title titleText='Entre em Contato'/>
+              <Title titleText='ENTRE EM CONTATO'/>
               </div>
               <div className='small-text-div'>
               <SmallText pSmallText='Acompanhe nossas redes sociais e fique por dentro do que estamos preparando' lineHeight='25px' />
