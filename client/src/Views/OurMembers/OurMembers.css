@@ -59,6 +59,5 @@
 
 .all-members img{
     width: 98px;
-    height: auto;
-    max-height: 120px;
+    height: 100px;
 }
