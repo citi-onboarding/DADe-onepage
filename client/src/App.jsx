@@ -3,6 +3,7 @@ import {
   Banner,
   Organization,
   Footer,
+  Contact,
 } from './Views';
 
 import './App.css';
@@ -11,12 +12,14 @@ import './App.css';
 function App() {
   return (
     <>
+     
       <Navbar/>
       <Banner/>
 
       <Organization />
-     
+      <Contact/>
       <Footer/>
+      
     </>
 
   );
