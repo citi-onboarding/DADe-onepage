@@ -1,9 +1,9 @@
-/* @font-face {
-	font-family: Austral-Sans;
-	src: url(../../);
-} */
+html{
+    overflow-x: hidden;
+}
 
 .organization{
     height: 138px;
     width: 100vw;
+    
 }
