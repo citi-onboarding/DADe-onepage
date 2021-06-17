@@ -1,6 +1,4 @@
 import {
-  PostList,
-  Card,
   Paragraph,
   FooterNotion,
   CardFather
