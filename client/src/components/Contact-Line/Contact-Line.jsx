@@ -13,7 +13,7 @@ function ContactLine(props) {
         <img src={props.lineImg} alt="Imagem de Rede Social" />
         </div>
         <div className="line-text-div">
-        <a href={props.contactLink}><SmallText lineHeight='24px' pSmallText={props.contactInfo}/></a>
+        <a href={props.contactLink} target='_blank'><SmallText lineHeight='24px' pSmallText={props.contactInfo}/></a>
         </div>
     </div>
   );
