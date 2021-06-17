@@ -17,13 +17,22 @@ function Navbar() {
     SetLogo(res.data);
   };
 
+  const [link_paticipate, SetLinkParticipate] = useState([]);
+
+  const loadLinkParticipate = async () => {
+    const res_ = await axios.get('http://localhost:3001/api/banner');
+    SetLinkParticipate(res_.data[0].link_botao_participe);
+  };
+
   useEffect(() => {
     loadLogo();
+    loadLinkParticipate();
   }, []);
+
 
     return (
       <header>
-        {logo?.map(({image, link_botao_participe}) => (
+        {logo?.map(({image}) => (
           <nav>
             <div className="logo-nav">
               <LogoDADe width='98px' height='87px'logo={image[0]?.url}/>
@@ -34,7 +43,7 @@ function Navbar() {
             <SectionNavbar text='Membros' id=''/>
             <SectionNavbar text='Contato' id=''/>
             <SectionNavbar text='FAQ' id=''/>
-            <Button text='PARTICIPAR' className="participate-button" width='11.8vw' link={link_botao_participe}/>
+            <Button text='PARTICIPAR' className="participate-button" width='11.8vw' link={link_paticipate}/>
           </nav>
       ))}
       </header>
