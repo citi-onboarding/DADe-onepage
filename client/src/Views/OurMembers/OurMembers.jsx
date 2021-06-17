@@ -29,7 +29,7 @@ function OurMembers() {
           </div>
           <div className="all-members">
           {members?.map(({cargo, data_inicial, image, name}) => (
-            <Member image={image[0].url} name={name} cargo={cargo} data_inicial={data_inicial}/>
+            <Member image={image[0]?.url} name={name} cargo={cargo} data_inicial={data_inicial}/>
           ))}
           </div>
         </div>

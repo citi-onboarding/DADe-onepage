@@ -27,7 +27,7 @@ function Banner() {
       <div className='banner'>
         <BannerTitleAndButton/>
         <div className='logo'>
-          <img src={image[0].url} alt="Logo DADe" />
+          <img src={image[0]?.url} alt="Logo DADe" />
         </div>
       </div>
       ))}

@@ -26,7 +26,7 @@ function Navbar() {
         {logo?.map(({image, link_botao_participe}) => (
           <nav>
             <div className="logo-nav">
-              <LogoDADe width='98px' logo={image[0].url}/>
+              <LogoDADe width='98px' logo={image[0]?.url}/>
             </div>
             <SectionNavbar text='O que é o D.A.?' id=''/>
             <SectionNavbar text='Como trabalhamos' id=''/>
