@@ -26,7 +26,7 @@ function Banner() {
     {banner?.map(({image }) => (
       <div className='banner'>
         <BannerTitleAndButton/>
-        <div className='logo'>
+        <div className='logo-banner'>
           <img src={image[0]?.url} alt="Logo DADe" />
         </div>
       </div>
