@@ -4,9 +4,22 @@ import{
   Title,
 } from '../../components'
 
-import tavora from '../../Assets/photo_tavora.svg'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function OurMembers() {
+
+  const [members, SetMembers] = useState([]);
+
+  const loadMembers = async () => {
+    const res = await axios.get('http://localhost:3001/api/members');
+    console.log(res.data)
+    SetMembers(res.data);
+  };
+
+  useEffect(() => {
+    loadMembers();
+  }, []);
 
     return (
       <section className='members-section'>
@@ -15,20 +28,12 @@ function OurMembers() {
             <Title titleText='NOSSO MEMBROS' textColor='#FFFFFF'/>
           </div>
           <div className="all-members">
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
-            <Member image={tavora} name='Lucas Távora' cargo='Comunicação' data_inicial='2021'/>
+          {members?.map(({cargo, data_inicial, image, name}) => (
+            <Member image={image[0].url} name={name} cargo={cargo} data_inicial={data_inicial}/>
+          ))}
           </div>
         </div>
+        
       </section>
     );
   }

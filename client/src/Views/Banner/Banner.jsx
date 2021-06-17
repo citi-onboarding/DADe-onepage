@@ -1,21 +1,39 @@
 import './Banner.css';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+
 import{
   BannerTitleAndButton,
   LogoDADe
 } from '../../components'
 
-import logo from '../../Assets/Logo_DADe.svg'
 
 function Banner() {
+  const [banner, SetBanner] = useState([]);
 
-    return (
+  const loadBanner = async () => {
+    const res = await axios.get('http://localhost:3001/api/banner');
+    SetBanner(res.data);
+  };
+
+  useEffect(() => {
+    loadBanner();
+  }, []);
+
+
+  return (
+    <>
+    {banner?.map(({image }) => (
       <div className='banner'>
         <BannerTitleAndButton/>
         <div className='logo'>
-          <LogoDADe logo={logo}/>
+          <img src={image[0].url} alt="Logo DADe" />
         </div>
       </div>
-    );
+      ))}
+    </>
+    
+  );
   }
 
 export default Banner;
