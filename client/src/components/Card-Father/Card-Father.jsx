@@ -4,11 +4,6 @@ import Card from '../Card';
 
 import './Card-Father.css';
 
-import people from '../../Assets/people.svg';
-import notion from '../../Assets/cib_notion.svg';
-import document from '../../Assets/Icon_Document.svg';
-import waves from '../../Assets/waves.svg';
-
 function CardFather(props) {
 
   const [cards, setCards] = useState([]);
