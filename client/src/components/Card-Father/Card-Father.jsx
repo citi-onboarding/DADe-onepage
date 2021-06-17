@@ -9,18 +9,24 @@ import notion from '../../Assets/cib_notion.svg';
 import document from '../../Assets/Icon_Document.svg';
 import waves from '../../Assets/waves.svg';
 
-
-
-
-
 function CardFather(props) {
+
+  const [cards, setCards] = useState([]);
+
+  const loadCards = async () => {
+    const res = await axios.get('http://localhost:3001/api/organizacao-interna');
+    setCards(res.data);
+  };
+
+  useEffect(() => {
+    loadCards();
+  }, []);
 
   return (
     <div className="card-father-div">
-      <Card cardImage={people} cardText="Todos participam da Reunião Geral - Terças 18h"/>
-      <Card cardImage={waves} cardText="Comunicação interna em primeiro lugar! Se alguém acha que não consegue fazer alguma demanda, tudo bem! Só avisar que a gente se reorganiza."/>
-      <Card cardImage={document} cardText="Todos tentam ficar por dentro do que está rolando. toda reunião interna ou externa, fazemos ATA."/>
-      <Card cardImage={notion} cardText="Acompanhar o notion e atualizar o Notion sempre é essencial para que todos estejam à par das atividades que estão sendo executadas."/>
+      {cards?.map(({_id, text, image}) => (
+      <Card cardImage={image[0].url} cardText={text}/>
+      ))}
     </div>
   );
 }
