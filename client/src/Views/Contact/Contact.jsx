@@ -1,11 +1,5 @@
 import {
-    PostList,
-    Card,
-    Paragraph,
-    FooterNotion,
-    CardFather,
     Title,
-    Text,
     SmallText,
     ContactLine,
   } from '../../components';
