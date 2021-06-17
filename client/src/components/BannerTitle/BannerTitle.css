@@ -12,7 +12,7 @@
 .yellow-text, .purple-text{
     width: 51vw;
     font-family: Austral-Sans;
-    font-size: 3vw;
+    font-size: 48px;
     font-weight: 400;
 }
 
@@ -24,4 +24,10 @@
     justify-content: flex-end;
     row-gap: 2vh;
 
+}
+
+@media (max-width: 1200px) {
+    .purple-text, .yellow-text{
+        font-size: 40px;
+    }
 }

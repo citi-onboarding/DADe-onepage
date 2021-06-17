@@ -22,7 +22,7 @@ function OurMembers() {
   }, []);
 
     return (
-      <section className='members-section'>
+      <section className='members-section' id="members">
         <div className="members-content">
           <div className="title-text">
             <Title titleText='NOSSO MEMBROS' textColor='#FFFFFF'/>

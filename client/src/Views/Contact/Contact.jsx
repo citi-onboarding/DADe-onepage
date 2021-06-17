@@ -28,7 +28,7 @@ import {
     }, []);
   
       return (
-        <section className='contact'>
+        <section className='contact' id="contact">
           <div className='contact-info'>
             <div className='contact-paragraph'>
               <div className='title-div'>
