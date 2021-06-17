@@ -11,6 +11,7 @@ import {
   } from '../../components';
   
   import { useState, useEffect } from 'react';
+  import axios from 'axios';
   
   import Instagram from '../../Assets/InstaIcon.svg';
   import Twitter from '../../Assets/TwitterIcon.svg';
@@ -21,6 +22,16 @@ import {
   import './Contact.css';
   
   function Contact(props) {
+    const [contacts, setContacts] = useState([]);
+
+    const loadContacts = async () => {
+      const res = await axios.get('http://localhost:3001/api/contatos');
+      setContacts(res.data);
+    };
+
+    useEffect(() => {
+      loadContacts();
+    }, []);
   
       return (
         <section className='contact'>
@@ -33,13 +44,15 @@ import {
               <SmallText pSmallText='Acompanhe nossas redes sociais e fique por dentro do que estamos preparando' lineHeight='25px' />
               </div>
             </div>
+            {contacts?.map(({_id, whatsapp, telegram, email, twitter, instagram}) => (
             <div className='line-group-div'>
-              <ContactLine lineImg={Instagram} contactInfo='dadeupe' contactLink ='https://ge.globo.com/pe/futebol/times/nautico/'/>
-              <ContactLine lineImg={Twitter} contactInfo='DADeUFPE' contactLink ='https://ge.globo.com/pe/futebol/times/nautico/'/>
-              <ContactLine lineImg={Mail} contactInfo='dadeufpe@gmail.com' contactLink ='https://ge.globo.com/pe/futebol/times/nautico/'/>
-              <ContactLine lineImg={Telegram} contactInfo='Telegram' contactLink ='https://ge.globo.com/pe/futebol/times/nautico/'/>
-              <ContactLine lineImg={Whatsapp} contactInfo='Whatsapp' contactLink ='https://ge.globo.com/pe/futebol/times/nautico/'/>
+                <ContactLine lineImg={Instagram} contactInfo='dadeupe' contactLink ={instagram}/>
+                <ContactLine lineImg={Twitter} contactInfo='DADeUFPE' contactLink ={twitter}/>
+                <ContactLine lineImg={Mail} contactInfo='dadeufpe@gmail.com' contactLink ={email}/>
+                <ContactLine lineImg={Telegram} contactInfo='Telegram' contactLink ={telegram}/>
+                <ContactLine lineImg={Whatsapp} contactInfo='Whatsapp' contactLink ={whatsapp}/>
             </div>
+            ))}
           </div>
           <div className='forms'>
             <form action="">
