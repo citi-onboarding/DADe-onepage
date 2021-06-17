@@ -24,6 +24,12 @@ Banner.add({
     type: Types.CloudinaryImages,
     require: true,
   },
+  link_botao_participe: {
+    type: Types.Text,
+    required: true,
+    initial: true,
+    index: true,
+  },
 });
 
 Banner.register();

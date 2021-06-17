@@ -12,7 +12,7 @@
     justify-content: center;
     display: grid;
     color: #FFFFFF;
-    grid-template-rows: 45% 45%;
+    grid-template-rows: 148px 148px;
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
     width: 90vw;
     max-width: 1440px;
