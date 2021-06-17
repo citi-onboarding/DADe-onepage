@@ -25,7 +25,7 @@ function CardFather(props) {
   return (
     <div className="card-father-div">
       {cards?.map(({_id, text, image}) => (
-      <Card cardImage={image[0].url} cardText={text}/>
+      <Card cardImage={image[0]?.url} cardText={text}/>
       ))}
     </div>
   );
