@@ -29,28 +29,30 @@ import {
   
       return (
         <section className='contact' id="contact">
-          <div className='contact-info'>
-            <div className='contact-paragraph'>
-              <div className='title-div'>
-              <Title titleText='ENTRE EM CONTATO'/>
+          <div className='contact-content'>
+            <div className='contact-info'>
+              <div className='contact-paragraph'>
+                <div className='title-div'>
+                <Title titleText='ENTRE EM CONTATO'/>
+                </div>
+                <div className='small-text-div'>
+                <SmallText pSmallText='Acompanhe nossas redes sociais e fique por dentro do que estamos preparando' lineHeight='25px' />
+                </div>
               </div>
-              <div className='small-text-div'>
-              <SmallText pSmallText='Acompanhe nossas redes sociais e fique por dentro do que estamos preparando' lineHeight='25px' />
+              {contacts?.map(({_id, whatsapp, telegram, email, twitter, instagram}) => (
+              <div className='line-group-div'>
+                  <ContactLine lineImg={Instagram} contactInfo='dadeupe' contactLink ={instagram}/>
+                  <ContactLine lineImg={Twitter} contactInfo='DADeUFPE' contactLink ={twitter}/>
+                  <ContactLine lineImg={Mail} contactInfo='dadeufpe@gmail.com' contactLink ={email}/>
+                  <ContactLine lineImg={Telegram} contactInfo='Telegram' contactLink ={telegram}/>
+                  <ContactLine lineImg={Whatsapp} contactInfo='Whatsapp' contactLink ={whatsapp}/>
               </div>
+              ))}
             </div>
-            {contacts?.map(({_id, whatsapp, telegram, email, twitter, instagram}) => (
-            <div className='line-group-div'>
-                <ContactLine lineImg={Instagram} contactInfo='dadeupe' contactLink ={instagram}/>
-                <ContactLine lineImg={Twitter} contactInfo='DADeUFPE' contactLink ={twitter}/>
-                <ContactLine lineImg={Mail} contactInfo='dadeufpe@gmail.com' contactLink ={email}/>
-                <ContactLine lineImg={Telegram} contactInfo='Telegram' contactLink ={telegram}/>
-                <ContactLine lineImg={Whatsapp} contactInfo='Whatsapp' contactLink ={whatsapp}/>
+            <div className='forms'>
+              <form action="">
+              </form>
             </div>
-            ))}
-          </div>
-          <div className='forms'>
-            <form action="">
-            </form>
           </div>
         </section>
       );
