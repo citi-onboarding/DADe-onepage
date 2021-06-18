@@ -3,11 +3,6 @@ display: flex;
 box-sizing: border-box;
 flex-direction: column;
 justify-content: center;
-width: 100vw;
-padding-left: 7vw;
-padding-right: 77px;
 padding-top: 32px;
 gap: 7px;
-max-width: 1920px;
-margin: auto;
 }

@@ -1,19 +1,21 @@
 .banner{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
     max-width: 1440px;
+    width: 90vw;
+    box-sizing: border-box;
+    height: 576px;
     
 }
 
 .banner img{
-    width: 33.8vw;
-    height: auto;
-    max-width: 487px;
-    max-height: 433px;
+    width: 487px;
+    height: 433px;
 }
 
 .logo-banner{
-    margin-top: 4vh;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }

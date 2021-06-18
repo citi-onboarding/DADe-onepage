@@ -5,3 +5,9 @@ html{
 .organization{
     width: 100vw;
 }
+
+.organization-content{
+    width: 90vw;
+    max-width: 1440px;
+    margin: auto;
+}
