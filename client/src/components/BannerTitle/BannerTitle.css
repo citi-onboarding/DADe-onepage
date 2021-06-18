@@ -10,15 +10,14 @@
 }
 
 .yellow-text, .purple-text{
-    width: 51vw;
     font-family: Austral-Sans;
     font-size: 48px;
     font-weight: 400;
+    flex-wrap: nowrap;
 }
 
 .banner-title{
     padding-bottom: 3vh;
-    height: 17vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
