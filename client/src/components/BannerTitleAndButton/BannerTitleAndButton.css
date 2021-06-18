@@ -2,6 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 100px;
+    margin-left: 10px;
     max-width: 950px;
 }
