@@ -100,6 +100,14 @@ import {
                 <button className="form-buttom" type='submit'>ENVIAR</button>
               </form>
             </div>
+            <div className='contact-paragraph-mobile'>
+                <div className='title-div'>
+                <Title titleText='ENTRE EM CONTATO'/>
+                </div>
+                <div className='small-text-div'>
+                <SmallText pSmallText='Acompanhe nossas redes sociais e fique por dentro do que estamos preparando' lineHeight='25px' />
+                </div>
+              </div>
           </div>
         </section>
       );

@@ -5,14 +5,10 @@
 .contact-content{
     display: flex;
     justify-content: space-between;
-    width: 90vw;
+    width: 90%;
     max-width: 1440px;
     margin: auto;
     margin-top: 75px;
-}
-
-.forms{
-    width: 50%;
 }
 
 .title-div{
@@ -21,6 +17,10 @@
 
 .small-text-div{
     margin-bottom: 40px;
+}
+
+.contact-paragraph-mobile{
+    display: none;
 }
 
 .contact-info{
@@ -40,6 +40,7 @@
 }
 
 .forms{
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,4 +107,70 @@ textarea{
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
+}
+
+@media (max-width: 960px){
+
+    .forms{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .Form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        font-size: 12px;
+        width: 100%;
+        padding-left: 12px;
+    }
+
+    textarea{
+        font-size: 12px;
+        width: 100%;
+        padding-left: 12px;
+    }
+    
+    .contact-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-buttom{
+        align-self: flex-start;
+    }
+    
+    .contact-paragraph-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-div{
+        margin-bottom: 10px;
+    }
+
+    .small-text-div{
+        margin-bottom: 10px;
+        height: 58px;
+    }
+
+    .contact-paragraph{
+        display: none;
+    }
+
+    .contact-info{
+        align-self: flex-start;
+    }
+
 }
