@@ -24,8 +24,3 @@
 
 }
 
-@media (max-width: 1200px) {
-    .purple-text, .yellow-text{
-        font-size: 40px;
-    }
-}

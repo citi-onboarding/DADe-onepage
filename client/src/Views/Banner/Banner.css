@@ -1,9 +1,10 @@
 .banner{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: auto;
     width: 90vw;
-    box-sizing: content-box;
+    box-sizing: border-box;
     height: 576px;
     background: #893E8F;
     max-width: 1440px;
@@ -16,12 +17,62 @@
 }
 
 .banner img{
-    width: 557px;
-    height: 405px;
+    width: 571px;
+    height: 421px;
 }
 
 .logo-banner{
     padding-bottom: 50px;
     box-sizing: border-box;
     /* padding-left: 5%; */
+}
+
+@media (max-width: 1400px){
+    .banner img{
+        width: 480px;
+        height: auto;
+    }
+    .purple-text, .yellow-text{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1200px){
+    .banner img{
+        width: 225px;
+        height: 163px;
+    }
+    .purple-text, .yellow-text{
+        font-size: 32px;
+        line-height: 36.8px;
+        flex-wrap: wrap;
+        white-space: normal;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        height: 532px;
+        justify-content: center;
+        row-gap: 29px;
+        max-width: 337px;
+    }
+
+    .logo-banner{
+        padding: 0;
+        margin-left: auto;
+    }
+
+    .banner-title-and-button{
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .participate-button{
+        width: 148px;
+    }
+
+    .banner-title{
+        padding-bottom: 23px;
+        row-gap: 0;
+    }
 }

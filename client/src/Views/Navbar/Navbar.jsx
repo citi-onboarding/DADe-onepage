@@ -43,7 +43,7 @@ function Navbar() {
             <SectionNavbar text='Membros' id='#members'/>
             <SectionNavbar text='Contato' id='#contact'/>
             <SectionNavbar text='FAQ' id=''/>
-            <Button text='PARTICIPAR' className="participate-button" width='11.8vw' link={link_paticipate}/>
+            <Button text='Quero participar!' className="participate-button" width='11.8vw' link={link_paticipate}/>
           </nav>
       ))}
       </header>
