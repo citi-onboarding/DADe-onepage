@@ -1,21 +1,27 @@
 .banner{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: auto;
-    max-width: 1440px;
     width: 90vw;
-    box-sizing: border-box;
+    box-sizing: content-box;
     height: 576px;
-    
+    background: #893E8F;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.banner-view{
+    width: 100vw;
+    background: #893E8F;
 }
 
 .banner img{
-    width: 487px;
-    height: 433px;
+    width: 557px;
+    height: 405px;
 }
 
 .logo-banner{
     padding-bottom: 50px;
     box-sizing: border-box;
+    /* padding-left: 5%; */
 }

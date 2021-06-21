@@ -24,12 +24,14 @@ function Banner() {
   return (
     <>
     {banner?.map(({image }) => (
-      <div className='banner'>
-        <BannerTitleAndButton/>
-        <div className='logo-banner'>
-          <img src={image[0]?.url} alt="Logo DADe" />
+      <div className="banner-view">
+          <div className='banner'>
+            <BannerTitleAndButton/>
+            <div className='logo-banner'>
+              <img src={image[0]?.url} alt="Logo DADe" />
+            </div>
+          </div>
         </div>
-      </div>
       ))}
     </>
     
