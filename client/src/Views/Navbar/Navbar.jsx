@@ -8,6 +8,8 @@ import{
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import hamb from '../../Assets/menu_hamb.svg'
+import close from '../../Assets/fechar_menu.svg'
 
 function Navbar() {
   const [logo, SetLogo] = useState([]);
@@ -44,6 +46,10 @@ function Navbar() {
             <SectionNavbar text='Contato' id='#contact'/>
             <SectionNavbar text='FAQ' id=''/>
             <Button text='PARTICIPAR' className="participate-button" width='11.8vw' link={link_paticipate}/>
+            <div className="menu-hamburguer">
+              <a><img src={hamb} alt="Abrir menu" class="show-open"/></a>
+              <a><img src={close} alt="Fechar menu"/></a>
+            </div>
           </nav>
       ))}
       </header>

@@ -28,9 +28,19 @@ footer p{
     margin: auto;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1200px) {
     .footer-content{
         flex-direction: column;
         justify-content: space-around;
+        row-gap: 8px;
+    }
+
+    footer p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    footer img{
+        height: 26px;
     }
 }
