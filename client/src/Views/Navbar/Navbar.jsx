@@ -35,7 +35,7 @@ function Navbar() {
         {logo?.map(({image}) => (
           <nav>
             <div className="logo-nav">
-              <LogoDADe width='98px' height='87px'logo={image[0]?.url}/>
+              <LogoDADe width='180px' height='40px'logo={image[0]?.url}/>
             </div>
             <SectionNavbar text='O que é o D.A.?' id=''/>
             <SectionNavbar text='Como trabalhamos' id=''/>
