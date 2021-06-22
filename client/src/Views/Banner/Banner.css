@@ -19,9 +19,3 @@
     padding-bottom: 50px;
     box-sizing: border-box;
 }
-
-@media (max-width: 1200px) {
-    .logo-banner{
-        display: none;
-    }
-}
