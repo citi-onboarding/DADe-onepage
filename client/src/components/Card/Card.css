@@ -87,8 +87,16 @@
         width: 160px;
         height: 157px;
     }
-
-    
 }
 
+@media (max-width: 370px) {
+    .card-div{
+        width: 138px;
+        height: 140px;
+    }
 
+    .card-div .card-text-div p{
+        font-size: 9px;
+        line-height: 10px;
+    }
+}
