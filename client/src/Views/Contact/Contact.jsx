@@ -27,10 +27,15 @@ import {
       name, email, subject, message
     }
 
-    const sendEmail = async () => {
+    const sendEmail = async (event) => {
       try{
+        event.preventDefault()
         await axios.post('http://localhost:3001/contato', data);
-        alert("Sucesso")
+        alert("Sucesso! Sua mensagem foi enviada!")
+        setName("");
+        setEmail("")
+        setSubject("")
+        setMessage("")
       } catch (error) {
         alert(`Algo deu errado: ${error}`)
       }
@@ -44,7 +49,7 @@ import {
     useEffect(() => {
       loadContacts();
     }, []);
-  
+
       return (
         <section className='contact' id="contact">
           <div className='contact-content'>
@@ -69,28 +74,32 @@ import {
             </div>
             <div className='forms'>
               <form className='Form' onSubmit={sendEmail}>
-                <input 
+                <input
+                value={name} 
                 type="text" 
                 name="name" 
                 placeholder="Digite seu nome"
                 required
                 onChange={(e) => setName(e.target.value)}
                  />
-                <input 
+                <input
+                value={email}  
                 type="email"
                 name="email"
                 placeholder="Digite seu melhor e-mail"
                 required
                 onChange={(e) => setEmail(e.target.value)} 
                 />
-                <input 
+                <input
+                value={subject} 
                 type="text" 
                 name="subject"
                 placeholder="Digite o assunto"
                 required
                 onChange={(e) => setSubject(e.target.value)}
                 />
-                <textarea 
+                <textarea
+                value={message} 
                 name="message"
                 placeholder="Tire suas dúvidas ou nos mande uma mensagem" 
                 rows="10" 
