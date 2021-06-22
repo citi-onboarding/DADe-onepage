@@ -7,3 +7,22 @@
     gap: 32px;
     width: 100%;
 }
+
+@media (max-width: 940px) {
+    .card-father-div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .card-father-div{
+        gap: 19px;
+    }
+}
+
+@media (max-width: 413px) {
+    .card-father-div{
+        gap: 10px;
+    }
+}
