@@ -40,3 +40,63 @@
     height: 66.67px;
 }
 
+@media (max-width: 1064px) {
+    .card-div .card-text-div p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .card-image-div{
+        height: 30%;
+    }
+
+    .card-text-div{
+        height: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    .card-div{
+        width: 40vw;
+        height: 38vw;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 528px) {
+    .card-div .card-text-div p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .card-img-div img{
+        width: 60.75px;
+        height: 48.94px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card-img-div img{
+        width: 43.75px;
+        height: 42.94px;
+    }
+}
+
+@media (max-width: 391px) {
+    .card-div{
+        width: 160px;
+        height: 157px;
+    }
+}
+
+@media (max-width: 370px) {
+    .card-div{
+        width: 138px;
+        height: 140px;
+    }
+
+    .card-div .card-text-div p{
+        font-size: 9px;
+        line-height: 10px;
+    }
+}
