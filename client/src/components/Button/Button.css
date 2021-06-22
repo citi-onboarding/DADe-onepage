@@ -37,3 +37,32 @@
     font-weight: 600;
     color: #1D1D1B;
 }
+
+
+@media (max-width: 900px) {
+    .Notion-Buttom{
+        width: 30vw;
+        height: 6vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .Notion-Buttom p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Notion-Buttom p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Notion-Buttom{
+        width: 136.2px;
+        height: 27px;
+    }
+}
