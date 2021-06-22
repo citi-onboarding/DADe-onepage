@@ -1,5 +1,5 @@
 .participate-button{
-    width: 11.8vw;
+    width: 108px;
     height: 50px;
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -11,11 +11,11 @@
 
 .participate-button p{
     font-family: Austral-Sans;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
     text-align: center;
     color: #893E8F;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .Notion-Buttom{

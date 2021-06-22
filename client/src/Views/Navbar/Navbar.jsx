@@ -26,11 +26,14 @@ function Navbar() {
     SetLinkParticipate(res_.data[0].link_botao_participe);
   };
 
+  const [toggle, SetToggle] = useState('')
+  
   useEffect(() => {
     loadLogo();
     loadLinkParticipate();
   }, []);
 
+  
 
     return (
       <header>
@@ -39,16 +42,27 @@ function Navbar() {
             <div className="logo-nav">
               <LogoDADe width='180px' height='40px'logo={image[0]?.url}/>
             </div>
-            <SectionNavbar text='O que é o D.A.?' id=''/>
             <SectionNavbar text='Como trabalhamos' id=''/>
             <SectionNavbar text='Realizações ' id=''/>
             <SectionNavbar text='Membros' id='#members'/>
             <SectionNavbar text='Contato' id='#contact'/>
             <SectionNavbar text='FAQ' id=''/>
-            <Button text='PARTICIPAR' className="participate-button" width='11.8vw' link={link_paticipate}/>
-            <div className="menu-hamburguer">
-              <a><img src={hamb} alt="Abrir menu" class="show-open"/></a>
-              <a><img src={close} alt="Fechar menu"/></a>
+            <Button text='Participar' className="participate-button" width='108px' link={link_paticipate}/>
+            <div id="menu-hamburguer">
+              <input type="checkbox" id="checkbox-menu" checked={toggle}/>
+              <label for="checkbox-menu">
+                <img src={hamb} alt="Abrir menu" class="open" onClick={() => SetToggle('a')}/>
+              </label>
+              
+              <div className="menu-nav">
+                  <a href="" onClick={() => SetToggle('')} >Como trabalhamos?</a>
+                  <a href="" onClick={() => SetToggle('')} >Realizações</a>
+                  <a href="#members" onClick={() => SetToggle('')} >Membros</a>
+                  <a href="#contact" onClick={() => SetToggle('')} >Contato</a>
+                  <a href="" onClick={() => SetToggle('')} >FAQ</a>
+                  <img src={close} alt="Fechar menu" className="close-menu" onClick={() => SetToggle('')}/>
+                </div>
+              
             </div>
           </nav>
       ))}

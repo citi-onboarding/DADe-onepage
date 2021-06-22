@@ -38,9 +38,11 @@ footer p{
     footer p{
         font-size: 10px;
         line-height: 12px;
+        margin: 0;
+        padding: 0;
     }
 
     footer img{
-        height: 26px;
+        height: 22px;
     }
 }
