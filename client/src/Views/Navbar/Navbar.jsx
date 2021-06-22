@@ -59,8 +59,8 @@ function Navbar() {
                   <a href="" onClick={() => SetToggle('')} >Realizações</a>
                   <a href="#members" onClick={() => SetToggle('')} >Membros</a>
                   <a href="#contact" onClick={() => SetToggle('')} >Contato</a>
-                  <a href="" onClick={() => SetToggle('')} >FAQ</a>
-                  <img src={close} alt="Fechar menu" className="close-menu" onClick={() => SetToggle('')}/>
+                  <a href={link_paticipate} onClick={() => SetToggle('')} >Participar</a>
+                  <img src={close} target="_blank"alt="Fechar menu" className="close-menu" onClick={() => SetToggle('')}/>
                 </div>
               
             </div>
