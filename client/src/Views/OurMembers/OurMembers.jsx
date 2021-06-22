@@ -13,7 +13,6 @@ function OurMembers() {
 
   const loadMembers = async () => {
     const res = await axios.get('http://localhost:3001/api/members');
-    console.log(res.data)
     SetMembers(res.data);
   };
 
