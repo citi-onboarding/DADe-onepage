@@ -40,6 +40,7 @@ nav{
 
 #menu-hamburguer, .close-menu{
     display: none;
+    overflow: hidden;
 }
 #checkbox-menu{
     opacity: 0;

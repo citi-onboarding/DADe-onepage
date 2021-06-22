@@ -16,7 +16,7 @@ footer p{
     color: #FFFFFF;
     font-weight: 400;
     font-weight: 400;
-    
+    padding: 0;
 }
 
 .footer-content{
@@ -28,7 +28,7 @@ footer p{
     margin: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
     .footer-content{
         flex-direction: column;
         justify-content: space-around;
