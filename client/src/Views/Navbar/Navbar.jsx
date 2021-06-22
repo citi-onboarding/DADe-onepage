@@ -47,6 +47,7 @@ function Navbar() {
             <SectionNavbar text='Membros' id='#members'/>
             <SectionNavbar text='Contato' id='#contact'/>
             <SectionNavbar text='FAQ' id=''/>
+
             <Button text='Participar' className="participate-button" width='108px' link={link_paticipate}/>
             <div id="menu-hamburguer">
               <input type="checkbox" id="checkbox-menu" checked={toggle}/>

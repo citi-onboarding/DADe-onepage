@@ -1,5 +1,5 @@
 .participate-button{
-    width: 108px;
+    width: 165px;
     height: 50px;
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-around;
     max-width: 170px;
+    text-decoration: none;
 }
 
 .participate-button p{
@@ -14,7 +15,7 @@
     font-size: 16px;
     line-height: 23px;
     text-align: center;
-    color: #893E8F;
+    color:#893E8F;
     font-weight: 400;
 }
 

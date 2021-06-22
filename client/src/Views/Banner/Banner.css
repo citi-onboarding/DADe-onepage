@@ -2,20 +2,111 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
-    max-width: 1440px;
-    width: 90vw;
+    width: 95vw;
     box-sizing: border-box;
     height: 576px;
+    background: #893E8F;
+    max-width: 1440px;
+}
+
+.middle-banner{
+    max-width: 1500px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.banner-view{
+    width: 100vw;
+    background: #893E8F;
+    margin: auto;
 }
 
 .banner img{
-    width: 487px;
-    height: 433px;
-    
+    width: 571px;
+    height: 421px;
+
 }
 
 .logo-banner{
     padding-bottom: 50px;
     box-sizing: border-box;
+}
+
+
+@media (max-width: 1400px){
+    .banner img{
+        width: 480px;
+        height: auto;
+    }
+    .purple-text, .yellow-text{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1200px){
+    .banner img{
+        width: 380px;
+        height: auto;
+    }
+    .purple-text, .yellow-text{
+        font-size: 34px;
+        line-height: 32.8px;
+    }
+
+    .banner-title{
+        row-gap: 10px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 920px){
+    .banner img{
+        width: 300px;
+        height: auto;
+    }
+    .purple-text, .yellow-text{
+        font-size: 36px;
+        line-height: 40.8px;
+        flex-wrap: wrap;
+        white-space: normal;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        height: 532px;
+        justify-content: center;
+        row-gap: 29px;
+   }
+
+    .logo-banner{
+        padding: 0;
+        margin-left: auto;
+    }
+
+    .banner-title-and-button{
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .participate-button{
+        width: 148px;
+    }
+
+    .banner-title{
+        padding-bottom: 23px;
+        row-gap: 0;
+    }
+}
+
+@media (max-width: 690px){
+    .banner img{
+        width: 225px;
+        height: 163px;
+    }
+
+    .yellow-text, .purple-text {
+        font-size: 32px;
+    }
 }
