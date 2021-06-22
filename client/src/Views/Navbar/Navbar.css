@@ -72,6 +72,7 @@ nav{
     label {
         cursor: pointer;
         position: relative;
+        display: flex;
     }
 
     #menu-hamburguer{
@@ -93,7 +94,7 @@ nav{
 
     }
 
-    #checkbox-menu:checked ~ .menu-nav a, p{
+    #checkbox-menu:checked ~ .menu-nav a, .menu-nav p{
         display: flex;
         padding-bottom: 17px;
         font-family: Montserrat;
