@@ -2,18 +2,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
-    width: 90vw;
+    width: 95vw;
     box-sizing: border-box;
     height: 576px;
     background: #893E8F;
     max-width: 1440px;
+}
+
+.middle-banner{
+    max-width: 1500px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
     margin: auto;
 }
 
 .banner-view{
     width: 100vw;
     background: #893E8F;
+    margin: auto;
 }
 
 .banner img{
@@ -27,6 +34,7 @@
     /* padding-left: 5%; */
 }
 
+
 @media (max-width: 1400px){
     .banner img{
         width: 480px;
@@ -39,12 +47,12 @@
 
 @media (max-width: 1200px){
     .banner img{
-        width: 350px;
+        width: 380px;
         height: auto;
     }
     .purple-text, .yellow-text{
-        font-size: 30px;
-        line-height: 30.8px;
+        font-size: 34px;
+        line-height: 32.8px;
     }
 
     .banner-title{
@@ -53,14 +61,14 @@
     }
 }
 
-@media (max-width: 850px){
+@media (max-width: 920px){
     .banner img{
-        width: 225px;
-        height: 163px;
+        width: 300px;
+        height: auto;
     }
     .purple-text, .yellow-text{
-        font-size: 32px;
-        line-height: 36.8px;
+        font-size: 36px;
+        line-height: 40.8px;
         flex-wrap: wrap;
         white-space: normal;
     }
@@ -70,8 +78,7 @@
         height: 532px;
         justify-content: center;
         row-gap: 29px;
-        max-width: 337px;
-    }
+   }
 
     .logo-banner{
         padding: 0;
@@ -90,5 +97,12 @@
     .banner-title{
         padding-bottom: 23px;
         row-gap: 0;
+    }
+}
+
+@media (max-width: 690px){
+    .banner img{
+        width: 225px;
+        height: 163px;
     }
 }
