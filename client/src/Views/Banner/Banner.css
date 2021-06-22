@@ -105,4 +105,8 @@
         width: 225px;
         height: 163px;
     }
+
+    .yellow-text, .purple-text {
+        font-size: 32px;
+    }
 }

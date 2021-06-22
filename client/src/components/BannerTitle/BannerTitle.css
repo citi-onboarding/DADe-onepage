@@ -47,10 +47,3 @@
         padding-right: 0;
     }
 }
-
-@media (max-width: 690px) {
-    .yellow-text, .purple-text {
-        font-size: 32px;
-    }
-}
-
