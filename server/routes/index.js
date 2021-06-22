@@ -17,6 +17,8 @@ const organizacaointernaController = require('../controllers/organizacaointernaC
 
 const realizacoesController = require('../controllers/realizacoesController');
 
+const mailController = require('../controllers/mailController');
+
 
 module.exports = (app) => {
   app.use(cors());
@@ -36,6 +38,8 @@ module.exports = (app) => {
   app.get('/api/banner', bannerController.getBannerController);
   
   app.get('/api/logo', logoController.getLogoController);
+
+  app.post('/contato', mailController);
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));

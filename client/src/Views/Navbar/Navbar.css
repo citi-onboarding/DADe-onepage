@@ -1,10 +1,10 @@
 header{
     display: flex;
     position: sticky;
-    background-color:#FFFFFF;;
+    background: #893E8F;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid rgba(0, 0, 0, 0.01);
+    border-bottom: 1px solid #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: auto;
     width: 100vw;
@@ -12,21 +12,22 @@ header{
     box-sizing: border-box;
     top: 0;
     
+    
 }
 
 header a{
-    font-family: Austral-Sans;
-    font-size: 18px;
+    font-family: Montserrat;
+    font-size: 16px;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .logo-nav{
-    width: 26vw;
+    width: 60vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 246px;
+    max-width: 406px;
 }
 
 nav{
@@ -35,4 +36,75 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 90vw;
+}
+
+#menu-hamburguer, .close-menu{
+    display: none;
+    overflow: hidden;
+}
+#checkbox-menu{
+    opacity: 0;
+}
+
+
+@media (max-width: 1200px){    
+    nav a {
+        display: none;
+    }
+
+    .participate-button{
+        display: none;
+    }
+
+    header{
+        height: 56px;
+    }
+
+    .logo-nav img{
+        width: 144px;
+        height: 32px;
+    }
+
+    .logo-nav{
+        width: 144px;
+    }
+
+    label {
+        cursor: pointer;
+        position: relative;
+    }
+
+    #menu-hamburguer{
+        display: flex;
+    }
+
+    #checkbox-menu:checked ~ .menu-nav{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 200vh;
+        background-color: #292929;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 84px;
+
+    }
+
+    #checkbox-menu:checked ~ .menu-nav a, p{
+        display: flex;
+        padding-bottom: 17px;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        justify-content: center;
+    }
+
+    #checkbox-menu:checked ~ .menu-nav img{
+        padding: 24px;
+        display: flex;
+    }
 }

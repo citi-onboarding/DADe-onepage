@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
 	font-family: Austral-Sans;
 	src: url(./Fonts/Austral-Sans_Rough-Regular.ttf);

@@ -20,5 +20,44 @@
     font-family: Austral-Sans;
     font-size: 28px;
     line-height: 29px;
+    font-weight: 400;
+    text-align: center;
     color: #FFFFFF;
+}
+
+@media (max-width: 1050px) {
+    .notion-footer-content{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .footer-div h1{
+        font-size: 25px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 618px) {
+    .footer-div h1{
+        font-size: 20px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 493px) {
+    .footer-div h1{
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .notion-footer-content{
+        height: 90px;
+    }
+}
+
+@media (max-width: 395px) {
+    .footer-div h1{
+        font-size: 12px;
+        line-height: 17px;
+    }
 }
