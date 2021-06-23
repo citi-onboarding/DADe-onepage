@@ -1,9 +1,12 @@
+import config from '../../config/config';
+
 import './Navbar.css';
 import{
   SectionNavbar,
   LogoDADe,
   Button,
 } from '../../components'
+
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -15,14 +18,14 @@ function Navbar() {
   const [logo, SetLogo] = useState([]);
 
   const loadLogo = async () => {
-    const res = await axios.get('http://localhost:3001/api/logo');
+    const res = await axios.get(`${config.url}/api/logo`);
     SetLogo(res.data);
   };
 
   const [link_paticipate, SetLinkParticipate] = useState([]);
 
   const loadLinkParticipate = async () => {
-    const res_ = await axios.get('http://localhost:3001/api/banner');
+    const res_ = await axios.get(`${config.url}/api/banner`);
     SetLinkParticipate(res_.data[0].link_botao_participe);
   };
 

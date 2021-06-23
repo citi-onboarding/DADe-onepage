@@ -1,3 +1,5 @@
+import config from '../../config/config';
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -9,7 +11,7 @@ function Footer(props) {
   const [notion, setNotion] = useState([]);
 
   const loadNotion = async () => {
-    const res = await axios.get('http://localhost:3001/api/notion');
+    const res = await axios.get(`${config.url}/api/notion`);
     setNotion(res.data);
   };
 

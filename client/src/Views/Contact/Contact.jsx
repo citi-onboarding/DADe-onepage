@@ -1,3 +1,5 @@
+import config from '../../config/config';
+
 import {
     Title,
     SmallText,
@@ -30,7 +32,7 @@ import {
     const sendEmail = async (event) => {
       try{
         event.preventDefault()
-        await axios.post('http://localhost:3001/contato', data);
+        await axios.post(`${config.url}/contato`, data);
         alert("Sucesso! Sua mensagem foi enviada!")
         setName("");
         setEmail("")
@@ -42,7 +44,7 @@ import {
     }
 
     const loadContacts = async () => {
-      const res = await axios.get('http://localhost:3001/api/contatos');
+      const res = await axios.get(`${config.url}/api/contatos`);
       setContacts(res.data);
     };
 
