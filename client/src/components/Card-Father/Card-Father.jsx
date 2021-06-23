@@ -1,3 +1,5 @@
+import config from '../../config/config';
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from '../Card'; 
@@ -9,7 +11,7 @@ function CardFather(props) {
   const [cards, setCards] = useState([]);
 
   const loadCards = async () => {
-    const res = await axios.get('http://localhost:3001/api/organizacao-interna');
+    const res = await axios.get(`${config.url}/api/organizacao-interna`);
     setCards(res.data);
   };
 

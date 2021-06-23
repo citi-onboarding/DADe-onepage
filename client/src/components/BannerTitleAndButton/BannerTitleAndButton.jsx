@@ -1,3 +1,5 @@
+import config from '../../config/config';
+
 import './BannerTitleAndButton.css';
 import BannerTitle from '../BannerTitle'
 import Button from '../Button'
@@ -10,7 +12,7 @@ function BannerTitleAndButton() {
   const [bannerTitleAndButton, SetBannerTitleAndButton] = useState([]);
 
   const loadBannerTitleAndButton = async () => {
-    const res = await axios.get('http://localhost:3001/api/banner');
+    const res = await axios.get(`${config.url}/api/banner`);
     SetBannerTitleAndButton(res.data);
   };
 
