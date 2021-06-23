@@ -1,3 +1,5 @@
+import config from '../../config/config';
+
 import './OurMembers.css';
 import{
   Member,
@@ -12,7 +14,7 @@ function OurMembers() {
   const [members, SetMembers] = useState([]);
 
   const loadMembers = async () => {
-    const res = await axios.get('http://localhost:3001/api/members');
+    const res = await axios.get(`${config.url}/api/members`);
     SetMembers(res.data);
   };
 

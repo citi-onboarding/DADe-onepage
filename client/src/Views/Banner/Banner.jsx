@@ -1,7 +1,7 @@
 import './Banner.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import config from '../../config/config';
 import{
   BannerTitleAndButton,
   LogoDADe
@@ -12,7 +12,7 @@ function Banner() {
   const [banner, SetBanner] = useState([]);
 
   const loadBanner = async () => {
-    const res = await axios.get('http://localhost:3001/api/banner');
+    const res = await axios.get(`${config.url}/api/banner`);
     SetBanner(res.data);
   };
 
