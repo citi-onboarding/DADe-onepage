@@ -131,6 +131,7 @@
         
     .member-content p, h4{
         font-family: Montserrat;
+        padding: 1px;
     }
 
     .slick-prev:before, .slick-next:before {
