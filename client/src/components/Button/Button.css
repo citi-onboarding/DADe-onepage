@@ -1,0 +1,69 @@
+.participate-button{
+    width: 165px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 170px;
+    text-decoration: none;
+}
+
+.participate-button p{
+    font-family: Austral-Sans;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color:#893E8F;
+    font-weight: 400;
+}
+
+.Notion-Buttom{
+    width: 273.39px;
+    height: 73px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.Notion-Buttom p{
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 600;
+    color: #1D1D1B;
+}
+
+
+@media (max-width: 900px) {
+    .Notion-Buttom{
+        width: 30vw;
+        height: 6vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .Notion-Buttom p{
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Notion-Buttom p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Notion-Buttom{
+        width: 136.2px;
+        height: 27px;
+    }
+}

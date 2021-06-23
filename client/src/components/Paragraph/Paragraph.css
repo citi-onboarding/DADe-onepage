@@ -1,0 +1,13 @@
+.paragraph-div{
+display: flex;
+box-sizing: border-box;
+flex-direction: column;
+justify-content: center;
+padding-top: 32px;
+gap: 7px;
+}
+
+/*(Solve disalignment between paragraph text and card father, if necessary)
+.paragraph-text{
+    padding: 0 2.8vw;
+}*/

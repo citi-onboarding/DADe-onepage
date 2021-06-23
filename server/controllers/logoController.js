@@ -1,10 +1,10 @@
 const keystone = require('keystone');
 
-const Post = keystone.list('Posts');
+const Logo = keystone.list('Logo');
 
 module.exports = {
-  getPostController(req, res) {
-    Post.model.find((err, data) => {
+  getLogoController(req, res) {
+    Logo.model.find((err, data) => {
       if (err) {
         console.log(err);
         res.status(500).send('DB Error');

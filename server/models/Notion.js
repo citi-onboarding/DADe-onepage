@@ -2,19 +2,18 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Post = new keystone.List('Posts');
+const Notion = new keystone.List('Notion',{
+  nocreate: true,
+  nodelete: true,
+});
 
-Post.add({
-  name: {
+Notion.add({
+  link: {
     type: Types.Text,
     required: true,
     initial: true,
     index: true,
   },
-  image: {
-    type: Types.CloudinaryImages,
-    require: true,
-  },
 });
 
-Post.register();
+Notion.register();

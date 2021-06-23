@@ -1,10 +1,28 @@
 import {
-  PostList,
-} from './components';
+  Navbar,
+  Banner,
+  Organization,
+  OurMembers,
+  Footer,
+  Contact,
+} from './Views';
+
+import './App.css';
+
 
 function App() {
   return (
-    <PostList />
+    <>
+     
+      <Navbar/>
+      <Banner/>
+      <Organization />
+      <OurMembers/>
+      <Contact/>
+      <Footer/>
+      
+    </>
+
   );
 }
 
