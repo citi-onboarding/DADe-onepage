@@ -6,6 +6,7 @@ import {
   OurMembers,
   Footer,
   Contact,
+  HowWeWork
 } from './Views';
 
 import './App.css';
@@ -14,10 +15,10 @@ import './App.css';
 function App() {
   return (
     <>
-     
       <Navbar/>
       <Banner/>
-      <Organization/>
+      <HowWeWork/>
+      <Organization />
       <Realizations/>
       <OurMembers/>
       <Contact/>
