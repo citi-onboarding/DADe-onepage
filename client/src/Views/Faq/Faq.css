@@ -1,0 +1,14 @@
+.faq-section{
+    width: 100vw;
+    height: 400px;
+}
+
+.faq-content{
+    width: 90vw;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.faq-paragraph{
+    padding-top: 32px;
+}

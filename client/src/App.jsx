@@ -5,6 +5,7 @@ import {
   OurMembers,
   Footer,
   Contact,
+  Faq,
 } from './Views';
 
 import './App.css';
@@ -18,6 +19,7 @@ function App() {
       <Banner/>
       <Organization />
       <OurMembers/>
+      <Faq/>
       <Contact/>
       <Footer/>
       
