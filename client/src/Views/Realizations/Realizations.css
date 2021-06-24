@@ -1,0 +1,42 @@
+.realizations-section{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 550px;
+    background-color: #E55538;
+}
+
+.realizations-content{
+    box-sizing: border-box;
+    width: 90vw;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 64px;
+}
+
+.text-div{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-father{
+    box-sizing: border-box;
+    width: 89%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-container{
+    width: 208px;
+    height: 224px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px -4px rgba(29, 29, 27, 0.1);
+    border-radius: 8px;
+    margin: auto;
+}
+
+

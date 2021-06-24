@@ -2,6 +2,7 @@ import {
   Navbar,
   Banner,
   Organization,
+  Realizations,
   OurMembers,
   Footer,
   Contact,
@@ -16,7 +17,8 @@ function App() {
      
       <Navbar/>
       <Banner/>
-      <Organization />
+      <Organization/>
+      <Realizations/>
       <OurMembers/>
       <Contact/>
       <Footer/>
