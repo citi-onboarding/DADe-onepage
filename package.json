@@ -5,7 +5,7 @@
   "repository": "git@github.com:UFPE-DADe/DADe-onepage.git",
   "author": "Pedro <pccql@cin.ufpe.br>",
   "license": "MIT",
-  "scripts":{
+  "scripts": {
     "install": "cd ./client && npm install && cd ../server && npm install",
     "start": "cd ./client && npm run server && cd ../server && node index.js"
   }
