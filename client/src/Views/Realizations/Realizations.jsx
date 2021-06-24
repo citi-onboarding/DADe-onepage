@@ -40,18 +40,22 @@ function Realizations() {
             breakpoint: 1025,
             settings: {
               slidesToShow: 3,
+              infinite: qtd > 3,
             }
           },
           {
             breakpoint: 732,
             settings: {
               slidesToShow: 2,
+              infinite: qtd > 2,
             }
           },
           {
             breakpoint: 550,
             settings: {
+              centerMode: true,
               slidesToShow: 1,
+              infinite: qtd > 1,
             }
           },
         ]
