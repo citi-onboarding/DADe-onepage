@@ -16,20 +16,13 @@ function Acordion() {
     const Accordion = withStyles({
         root: {
           border: '1px solid rgba(0, 0, 0, .125)',
-          width: '650px',
-          boxShadow: 'none',
-          '&:not(:last-child)': {
-            borderBottom: 0,
-          },
-          '&:before': {
-            display: 'none',
-          },
-          '&$expanded': {
-            margin: 'auto',
-          },
+          width: '620px',
         },
         expanded: {},
       })(MuiAccordion);
+
+      const [questions, setQuestions] = useState([]);
+
       
     const loadQuestions = async () => {
         const res = await axios.get(`${config.url}/api/FAQ`);
@@ -41,7 +34,6 @@ function Acordion() {
     }, []);
 
     return (
-
         <div className="acordeon-div">
         {questions?.map(({_id, pergunta, resposta}) => (
             <div className="question-div">
