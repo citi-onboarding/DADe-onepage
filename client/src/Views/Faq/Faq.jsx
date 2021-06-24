@@ -15,9 +15,7 @@ function Faq() {
                     <Title titleText="FAQ"/>
                     <SmallText pSmallText="Ficou alguma dúvida? Acesse nossas caixinhas com dúvidas e respostas mais frequentes"/>
                 </div>
-                <div className="faq-questions-div">
                     <Acordion/>
-                </div>
             </div>
         </section>
     );

@@ -1,0 +1,6 @@
+.acordeon-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 280px;
+}
