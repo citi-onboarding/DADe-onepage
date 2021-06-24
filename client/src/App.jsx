@@ -2,6 +2,7 @@ import {
   Navbar,
   Banner,
   Organization,
+  Realizations,
   OurMembers,
   Footer,
   Contact,
@@ -18,6 +19,7 @@ function App() {
       <Banner/>
       <HowWeWork/>
       <Organization />
+      <Realizations/>
       <OurMembers/>
       <Contact/>
       <Footer/>
