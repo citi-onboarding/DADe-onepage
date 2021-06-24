@@ -56,7 +56,6 @@ function Realizations() {
           {
             breakpoint: 550,
             settings: {
-              centerMode: true,
               slidesToShow: 1,
               infinite: qtd > 1,
             }
