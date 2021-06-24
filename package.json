@@ -1,39 +1,12 @@
 {
-  "name": "keystone-admin",
+  "name": "dade-onepage",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cd ./client && yarn && cd ../server && yarn",
-    "start": "cd ./client && yarn server && cd ../server && node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jorrmungandr/keystone-admin.git"
-  },
-  "keywords": [],
-  "author": "",
+  "repository": "git@github.com:UFPE-DADe/DADe-onepage.git",
+  "author": "Pedro <pccql@cin.ufpe.br>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Jorrmungandr/keystone-admin/issues"
-  },
-  "homepage": "https://github.com/Jorrmungandr/keystone-admin#readme",
-  "dependencies": {
-    "@babel/preset-react": "^7.6.3",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "keystone": "^4.2.1",
-    "mongoose": "^5.10.15",
-    "nodemailer": "^6.6.2",
-    "underscore": "^1.11.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9"
+  "scripts":{
+    "install": "cd ./client && npm install && cd ../server && npm install",
+    "start": "cd ./client && npm server && cd ../server && node index.js"
   }
 }
