@@ -1,4 +1,7 @@
 import './Realizations.css';
+
+import config from '../../config/config';
+
 import{
   Title,
   Text,
@@ -19,7 +22,7 @@ function Realizations() {
     const [qtd, SetQtd] = useState([]);
     
     const loadRealizations = async () => {
-        const res = await axios.get('http://localhost:3001/api/realizacoes');
+        const res = await axios.get(`${config.url}/api/realizacoes`);
         SetRealizations(res.data);
         SetQtd(res.data.length)
     };
