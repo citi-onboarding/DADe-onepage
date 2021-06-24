@@ -25,7 +25,7 @@
     font-family: Montserrat;
     color: #646464;
     font-size: 12px;
-    width: 100%;
+    width: 90%;
     height: 70%;
     text-align: center;
     line-height: 14px;
@@ -57,5 +57,27 @@
     width: 100%;
     height: 70%;
     margin-top: 35px;
-    padding: 0 20px;
+}
+
+@media (max-width: 1320px) {
+    .middle-text{
+        width: 190px;
+    } 
+        
+}
+
+@media (max-width: 1239px) {
+    .middle-text{
+        width: 16vw;
+    } 
+    .middle-text{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .middle-text{
+        width: 100%;
+    } 
+        
 }

@@ -22,7 +22,7 @@
 
 .carousel-father{
     box-sizing: border-box;
-    width: 89%;
+    width: 85%;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -39,4 +39,56 @@
     margin: auto;
 }
 
+.slick-prev:before,
+.slick-next:before
+{
+  display: none;
+}
 
+@media (max-width: 1384px) {
+    .card-container{
+        width: 190px;
+    } 
+        
+}
+
+@media (max-width: 1288px) {
+    .card-container{
+        width: 14.5vw;
+    } 
+        
+}
+
+@media (max-width: 1050px) {
+    .text-div{
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-container{
+        width: 21vw;
+    } 
+        
+}
+
+@media (max-width: 732px) {
+    .card-container{
+        width: 208px;
+    } 
+        
+}
+
+@media (max-width: 414px) {
+    .realizations-section{
+        height: 430px;
+    }
+
+    .realizations-content{
+        padding-top: 32px;
+    }
+    .carousel-father{
+        width: 89%;
+        padding-top: 30px;
+    }
+}
